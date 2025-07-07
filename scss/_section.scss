@@ -1,0 +1,70 @@
+.section {
+  width: 100%;
+  padding: 1.25rem 1.25rem 6.25rem 1.25rem;
+  @include flex-col;
+  @include flex-center;
+  @include center-txt;
+
+  hr {
+    // border-color: $cc-accent;
+    width: 75%;
+    margin-bottom: 25px;
+  }
+}
+
+.about {
+  h1 {
+    color: $cc-black;
+    font-weight: $fw-med;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    line-height: 2.75rem;
+  }
+
+  p {
+    text-align: left;
+    margin-left: 1.5rem;
+  }
+}
+
+.cta {
+  width: 100%;
+  padding: 1.25rem 1.25rem 6.25rem 1.25rem;
+  @include flex-col;
+  @include flex-center;
+
+  h1 {
+    font-weight: $fw-b;
+    font-size: 2.5rem;
+    line-height: 3.75rem;
+    text-align: center;
+    color: $cc-black;
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 1.81rem;
+  }
+}
+
+.features {
+  h2 {
+    margin: 2rem 0;
+    font-weight: $fw-reg;
+  }
+
+  hr {
+    width: 150px;
+    border-color: $cc-primary;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .about {
+    h1 {
+      text-align: left;
+      align-self: flex-start;
+      margin-left: 1.5rem;
+    }
+  }
+}

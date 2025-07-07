@@ -1,0 +1,99 @@
+.card {
+  width: clamp(335px, 100%, 450px);
+  padding: 15px 25px;
+  margin-bottom: 15px;
+  // border: 1px dashed;
+
+  img {
+    width: 25%;
+  }
+
+  h2 {
+    font-weight: $fw-reg;
+    font-size: 1.5rem;
+    color: $cc-black;
+    font-family: $ff-main;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-weight: $fw-lt;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+
+  &-list {
+    @include flex-col;
+    @include flex-center;
+
+    // img:nth-child(1) {
+    //   // border: 1px dashed;
+    //   width: 50%;
+    // }
+  }
+
+  &--step,
+  &--client {
+    @include flex-card;
+    text-align: left;
+    justify-content: space-evenly;
+
+    img {
+      width: 20%;
+    }
+
+    .card__content {
+      margin-left: 1rem;
+    }
+  }
+
+  &--client {
+    h3 {
+      color: $cc-black;
+      font-weight: $fw-med;
+      font-size: 1.5rem;
+    }
+  }
+
+  &--flex {
+    @include flex-card;
+    padding: 15px 0px;
+    margin-top: 50px;
+
+    .card__content {
+      text-align: left;
+      margin-left: 10px;
+    }
+
+    img {
+      width: 20%;
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .card {
+    &--feature {
+      @include flex-card;
+      text-align: left;
+      width: clamp(335px, 100%, 550px);
+    }
+
+    &--client {
+      font-size: 2.4rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .card {
+    &-list {
+      flex-direction: row;
+    }
+    &--feature {
+      @include flex-col;
+      @include center-txt;
+      width: clamp(335px, 100%, 450px);
+    }
+  }
+}

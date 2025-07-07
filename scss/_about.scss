@@ -1,0 +1,15 @@
+.about {
+  img {
+    width: clamp(350px, 100%, 500px);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .about {
+    flex-direction: row;
+
+    &__content {
+      margin-left: 2rem;
+    }
+  }
+}

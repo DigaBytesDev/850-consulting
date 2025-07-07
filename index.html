@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>850 Business Consulting | Expert Support</title>
+    <link rel="stylesheet" href="src/css/main.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="hero">
+        <div class="hero__content">
+          <h1>Expert connections, Smart growth.<br />Simplified finances.</h1>
+          <a href="#cta" class="cta-btn">Get in Touch</a>
+        </div>
+      </section>
+      <section id="about" class="section about">
+        <img
+          src="/images/illustration--consultant-2.png"
+          alt="Consultant"
+          class="about__img"
+        />
+        <div class="about__content">
+          <h1>Smart Support for Small Business</h1>
+          <p>
+            Business owners need more than basic bookkeeping. I provide
+            strategic, on-the-spot support designed to reduce stress, improve
+            clarity, and boost your bottom line.
+          </p>
+        </div>
+      </section>
+
+      <section id="features" class="section features bg--plt">
+        <h2>Support That Pays Off</h2>
+        <hr />
+        <div class="card-list">
+          <div class="feature card card--feature">
+            <img
+              src="images/icon--dollar02.png"
+              alt="Earnings"
+              class="feature__img"
+            />
+            <div class="card__content">
+              <h2>Maximize Your Earnings</h2>
+              <p>
+                Turn your existing efforts into greater profit with clear,
+                goal-driven support.
+              </p>
+            </div>
+          </div>
+          <div class="feature card card--feature">
+            <img
+              src="images/icon--lock.png"
+              alt="Potential"
+              class="feature__img"
+            />
+            <div class="card__content">
+              <h2>Unlock New Potential</h2>
+              <p>
+                Discover overlooked opportunities for growth and make smarter
+                moves with expert insight.
+              </p>
+            </div>
+          </div>
+          <div class="feature card card--feature">
+            <img src="images/icon--time.png" alt="Time" class="feature__img" />
+            <div class="card__content">
+              <h2>Simplify & Reclaim Time</h2>
+              <p>
+                Stay on top of compliance while gaining back time to focus on
+                what you love—your business, your family, or your life.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer cta" id="cta">
+        <div class="cta__content">
+          <p>Ready to get started? Request a consult</p>
+        </div>
+        <div class="form-container">
+          <form action="sendmail.php" class="form form--contact" method="POST">
+            <h2>Get In Touch</h2>
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" name="first_name" id="first-name" />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" name="last_name" id="last-name" />
+            </div>
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input type="text" name="company" id="company" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea name="message" id="message"></textarea>
+            </div>
+            <button type="submit" class="btn btn--submit btn--primary">
+              Send
+            </button>
+          </form>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

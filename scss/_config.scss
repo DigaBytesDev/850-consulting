@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+$cc-primary: #2e7d32;
+$cc-primary--24: #215924;
+$cc-primary--xdk: #0e250f;
+$cc-primary--xlt: #daf1db;
+
+$cc-success: green;
+
+$cc-neutral: #f8f1f1;
+$cc-white: #ffffff;
+$cc-black: #000000;
+$cc-shadow: rgba(0, 0, 0, 0.25);
+
+$ff-main: "Inter", sans-serif;
+// $ff-main: "IBM Plex Sans", sans-serif;
+
+$fw-lt: 300;
+$fw-reg: 400;
+$fw-med: 500;
+$fw-sb: 600;
+$fw-b: 700;
+
+@mixin flex {
+  display: flex;
+}
+
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin center-txt {
+  text-align: center;
+}
+
+@mixin left-align-txt {
+  text-align: left;
+}
+
+@mixin card {
+  width: clamp(335px, 100%, 450px);
+  padding: 15px 25px;
+  margin-bottom: 15px;
+}
+
+@mixin flex-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $ff-main;
+  // color: $cc-primary;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  @include flex-col;
+  @include flex-center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  // color: $cc-primary;
+  font-weight: $fw-med;
+  font-size: 2.5rem;
+}
+
+h1 {
+  line-height: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: $cc-black;
+  font-size: 1.5rem;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background: none;
+  padding: 8px 16px;
+  border-radius: 7px;
+  font-size: 1.5rem;
+  font-weight: $fw-med;
+  cursor: pointer;
+  transition: all ease 0.2s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &--primary {
+    background-color: $cc-primary;
+    color: $cc-primary--xlt;
+  }
+
+  &--cta {
+    border-radius: 7px;
+    padding: 8px 16px;
+  }
+}
+
+.main {
+  width: 100%;
+}
+
+.bg {
+  &--plt {
+    background: $cc-neutral;
+  }
+}

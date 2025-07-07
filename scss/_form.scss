@@ -1,0 +1,63 @@
+.form-container {
+  width: clamp(350px, 100%, 500px);
+  margin: 3rem 1.25rem;
+  // background: $cc-primary--xlt;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px $cc-shadow;
+}
+
+.form {
+  &--contact {
+    width: 100%;
+    margin: 0 auto;
+
+    h2 {
+      margin-bottom: 1.5rem;
+      color: $cc-primary;
+    }
+
+    .success {
+      margin-bottom: 1rem;
+      color: $cc-success;
+      font-weight: $fw-b;
+    }
+  }
+
+  &-group {
+    margin-bottom: 1rem;
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: $cc-primary--xdk;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid $cc-primary--xlt;
+      border-radius: 4px;
+    }
+
+    textarea {
+      height: 120px;
+      resize: vertical;
+    }
+
+    .submit-btn {
+      background-color: $cc-primary;
+      color: $cc-primary--xlt;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+
+      &:hover {
+        // background-color: $cc-accent;
+      }
+    }
+  }
+}
