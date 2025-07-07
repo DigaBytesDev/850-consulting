@@ -100,7 +100,11 @@ img {
   content: "";
   position: absolute;
   inset: 0;
+<<<<<<< HEAD:main.css
   background: url("images/hero--journal.png") center center/cover no-repeat;
+=======
+  background: url("./images/hero--journal.png") center center/cover no-repeat;
+>>>>>>> cf22492e9e1eeb45702377d3f3d23ae47c9ce296:css/main.css
   filter: blur(6px);
   transform: scale(1.05);
   z-index: 0;
