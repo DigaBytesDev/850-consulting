@@ -237,20 +237,17 @@ img {
   align-items: center;
   justify-content: center;
 }
-.card--step,
-.card--client {
+.card--step, .card--client {
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: left;
   justify-content: space-evenly;
 }
-.card--step img,
-.card--client img {
+.card--step img, .card--client img {
   width: 20%;
 }
-.card--step .card__content,
-.card--client .card__content {
+.card--step .card__content, .card--client .card__content {
   margin-left: 1rem;
 }
 .card--client h3 {
